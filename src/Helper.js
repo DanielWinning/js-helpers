@@ -9,6 +9,9 @@ class Helper {
 
     static propertyIsDefined(obj, prop) {
         if (Helper.isObject(obj)) {
+            if (prop === undefined) {
+                throw new Error("Property name is undefined.");
+            }
             return obj[prop] !== undefined;
         }
         throw new Error("The given variable is not an object.");
