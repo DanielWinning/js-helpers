@@ -37,6 +37,9 @@ test("isObject(array) equals false", () => {
 test("isObject(string) equals false", () => {
     expect(Helper.isObject(string)).toBe(false);
 });
+test("isObject(undefined) equals false", () => {
+    expect(Helper.isObject(undefined)).toBe(false);
+});
 
 /**
  * Helper.propertyIsDefined()
