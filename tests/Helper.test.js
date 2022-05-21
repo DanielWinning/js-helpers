@@ -52,3 +52,4 @@ test("propertyIsDefined() returns true when property is defined", () => {
 test("propertyIsDefined() returns false when property is not defined", () => {
     expect(Helper.propertyIsDefined(obj, "address")).toBe(false);
 });
+test("propertyIsDefined() throws error when property name is not provided",)
