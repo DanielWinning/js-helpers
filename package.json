@@ -4,8 +4,9 @@
   "description": "",
   "main": "dist/index.js",
   "scripts": {
-    "build": "npx babel src/index.js --out-dir dist",
-    "start": "npx babel src/index.js --watch --out-dir dist"
+    "build": "npx babel src --out-dir dist",
+    "start": "npx babel src --watch --out-dir dist",
+    "test": "jest"
   },
   "author": "Daniel Winning",
   "license": "ISC",
