@@ -5,7 +5,7 @@ npm install @dannyxcii/js-helpers
 ```
 
 ```
-import { Helper } from "@dannyxcii/js-helpers";
+import { Helper as H } from "@dannyxcii/js-helpers";
 
 console.log(Helper.isObject({}));
 ```
