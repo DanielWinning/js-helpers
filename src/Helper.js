@@ -7,14 +7,9 @@ class Helper {
         return typeof variableToTest === "object" && !Helper.isNull(variableToTest) && !Array.isArray(variableToTest);
     }
 
-    /**
-     *
-     * @param obj
-     * @param prop
-     */
     static propertyIsDefined(obj, prop) {
         if (Helper.isObject(obj)) {
-            return obj.prop !== undefined;
+            return obj[prop] !== undefined;
         }
         throw new Error("The given variable is not an object.");
     }

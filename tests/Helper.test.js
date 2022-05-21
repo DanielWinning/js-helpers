@@ -1,5 +1,11 @@
 const Helper = require("../src/Helper.js");
-const nullValue = null, string = "Hello, world!", number = 1, obj = {}, arr = [];
+let nullValue = null,
+    string = "Hello, world!",
+    number = 1,
+    obj = {
+        name: "Test"
+    },
+    arr = [];
 
 /**
  * Helper.isNull()
@@ -31,4 +37,19 @@ test("isObject(array) equals false", () => {
 });
 test("isObject(string) equals false", () => {
     expect(Helper.isObject(string)).toBe(false);
+});
+
+/**
+ * Helper.propertyIsDefined()
+ */
+test("propertyIsDefined(null) throws Error", () => {
+    expect(() => {
+        Helper.propertyIsDefined(null);
+    }).toThrow();
+});
+test("propertyIsDefined() returns true when property is defined", () => {
+    expect(Helper.propertyIsDefined(obj, "name")).toBe(true);
+});
+test("propertyIsDefined() returns false when property is not defined", () => {
+    expect(Helper.propertyIsDefined(obj, "address")).toBe(false);
 });
