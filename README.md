@@ -4,6 +4,12 @@ A Helper class to cut down some common tasks.
 npm install @dannyxcii/js-helpers
 ```
 
+```
+import { Helper } from "@dannyxcii/js-helpers";
+
+console.log(Helper.isObject({}));
+```
+
 # Functions
 
 ```
