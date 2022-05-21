@@ -1,6 +1,5 @@
 const Helper = require("../src/Helper.js");
-let nullValue = null,
-    string = "Hello, world!",
+let string = "Hello, world!",
     number = 1,
     obj = {
         name: "Test"
