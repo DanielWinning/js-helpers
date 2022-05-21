@@ -1,6 +1,6 @@
 A Helper class to cut down some common tasks.
 
-[View package on NPM](https://www.npmjs.com/package/@dannyxcii/js-helpers)
+View package on: [NPM](https://www.npmjs.com/package/@dannyxcii/js-helpers) | [GitHub](https://github.com/DanielWinning/js-helpers)
 
 ```
 npm install @dannyxcii/js-helpers
